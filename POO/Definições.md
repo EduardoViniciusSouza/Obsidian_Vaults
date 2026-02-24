@@ -17,8 +17,8 @@ Em POO temos 4 pilares que serão descritos em sua devida ordem abaixo.
 1.  [[Definição Abstração]]
 	-  A abstração consiste em focar apenas nos aspectos essenciais de um objeto e que seja comum a vários objetos dentro do escopo desta mesma abstração, um exemplo seria o carro, que na realidade possui milhares de peças, pressão dos pneus e etc. Entretanto para o sistema de uma locadora de veículos seria necessário apenas  o ***modelo***, ***placa*** e o ***valorDiaria***. Em geral a abstração foca no o que um objeto faz, e não em como ele faz. Isso cria uma separação entre a interface (o que você vê) e a implementação (o que acontece por baixo dos panos).
 	
-2.  Encapsulamento
-	-  adasdsadas
+2.  [[Encapsulamento]]
+	-  é o mecanismo de agrupar os dados (atributos) e os comportamentos (métodos) de um objeto em uma única unidade (a classe) e, mais importante, **restringir o acesso direto a esses dados**.
 3. Herança
 	-  ADSADASDAS
 4. Polimorfismo

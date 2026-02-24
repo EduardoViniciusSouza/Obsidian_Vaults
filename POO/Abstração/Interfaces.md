@@ -88,7 +88,37 @@ Se amanhã você quiser adicionar notificações por **Telegram**, você só cri
 Se você trabalha em equipe, você define a interface primeiro. Seus colegas podem começar a usar a interface no código deles enquanto você ainda está escrevendo a lógica interna da classe. O código deles vai compilar porque o "contrato" (a interface) já existe.
 
 ---
+### Exemplo 2: 
 
+```
+// O Contrato: Quem assinar, SABE FAZER uma exportação
+public interface Exportavel {
+    void exportarParaPDF();
+}
+
+// Fatura assina o contrato
+class Fatura implements Exportavel {
+    private double valorTotal;
+
+    @Override
+    public void exportarParaPDF() {
+        System.out.println("Gerando PDF da Fatura no valor de: R$ " + valorTotal);
+    }
+}
+
+// Produto assina o mesmo contrato
+class Produto implements Exportavel {
+    private String nomeProduto;
+
+    @Override
+    public void exportarParaPDF() {
+        System.out.println("Gerando PDF com os detalhes do produto: " + nomeProduto);
+    }
+}
+```
+A mágica da Interface é que agora você pode ter um botão no sistema que recebe qualquer objeto `Exportavel` e chama o método `exportarParaPDF()`, sem se importar se é uma Fatura, um Produto ou um Relatório.
+
+---
 ## ⚠️ Default Methods
 
 Antigamente, interfaces eram 100% vazias. Desde o Java 8, você pode usar a palavra **`default`** para criar um método com corpo dentro da interface. Isso serve para adicionar funções novas sem quebrar as classes antigas que já usavam a interface.

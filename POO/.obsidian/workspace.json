@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Abstração/Interfaces.md",
+                "file": "Definições.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interfaces"
+              "title": "Definições"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Abstração/Interfaces.md",
+                "file": "Definições.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Interfaces"
+              "title": "Outline of Definições"
             }
           }
         ],
@@ -187,10 +187,12 @@
   },
   "active": "5cc895b4e1f27970",
   "lastOpenFiles": [
+    "Encapsulamento/Encapsulamento.md",
+    "Definições.md",
+    "Encapsulamento",
+    "Abstração/Interfaces.md",
     "Abstração/Definição Abstração.md",
     "Abstração/Classes Abstratas.md",
-    "Definições.md",
-    "Abstração/Interfaces.md",
     "Templates/Basic.md",
     "Abstração.md",
     "Abstração",

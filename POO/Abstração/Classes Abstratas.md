@@ -45,6 +45,7 @@ class Guerreiro extends Personagem {
 }
 ```
 
+---
 ### 5. Exemplo Prático: 
 
 Pense em um banco. Existe uma "Conta", mas você nunca abre uma "Conta" genérica. Você abre uma "Conta Corrente" ou uma "Conta Poupança". Ambas são contas, mas o cálculo de rendimento ou taxas é diferente.
@@ -105,4 +106,39 @@ class ContaPoupanca extends Conta {
         }
     }
 }
+```
+
+---
+### Outro exemplo pratico: 
+```
+// A Identidade: Todo mundo aqui É UM funcionário
+abstract class Funcionario {
+    protected String nome;
+    protected double salarioBase;
+
+    public Funcionario(String nome, double salarioBase) {
+        this.nome = nome;
+        this.salarioBase = salarioBase;
+    }
+
+    // Método concreto: A regra de bater ponto é igual para todos
+    public void baterPonto() {
+        System.out.println(nome + " registrou o ponto no sistema.");
+    }
+
+    // Método abstrato: Cada cargo calcula seu bônus de um jeito
+    public abstract double calcularBonus();
+}
+
+class Programador extends Funcionario {
+    public Programador(String nome, double salarioBase) {
+        super(nome, salarioBase);
+    }
+
+    @Override
+    public double calcularBonus() {
+        return salarioBase * 0.10; // 10% de bônus
+    }
+}
+
 ```
