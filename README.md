@@ -62,8 +62,9 @@ Planejamento de próximos vaults:
 - 🌐 Desenvolvimento Web  
 - 🗄️ Banco de Dados  
 - 🧪 Testes e Qualidade de Software  
-- 🇷🇺 Ingles  
-- 📊 Calculo 1 e Algebra Linear
+- 🇬🇧 Ingles  
+- 📊 Calculo 1
+- 📊 Algebra Linear
 - 🧠 Engenharia de Software  
 
 *(A lista pode crescer conforme novos interesses surgirem.)*
